@@ -62,6 +62,8 @@ config/config.yaml
 ```
 Set DATA_PATH to the local dataset directory.
 
+AT EACH STEP PLEASE MAKE SURE YOU ARE IN RIGHT DIRECTORY IN TERMINAL.
+
 #Training
 Run training using:
 ```
@@ -81,6 +83,7 @@ The validation set was not used for training
 No test data was used or accessed by the team
 Model weights are provided in the runs/ directory
 Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
