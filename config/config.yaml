@@ -1,0 +1,14 @@
+DATA_PATH: /home/myusername1/Desktop/Offroad_Segmentation_Scripts/Offroad_Segmentation_Training_Dataset/
+SAVE_MODEL_PATH: runs/deeplab_desert_best.pt
+
+BACKBONE: mobilenetv3large
+CROP_SIZE: 513
+
+NUM_EPOCHS: 50
+BATCH_SIZE: 2
+LEARNING_RATE: 0.0001
+
+NUM_MASK_CHANNELS: 10
+
+CLASS_WEIGHTS: [1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0]
+
