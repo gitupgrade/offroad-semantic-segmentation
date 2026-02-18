@@ -1,3 +1,4 @@
+NOTE:THIS PROGRAM HAS BEEN COMPLETELY WRITTEN ON LINUX UBUNTU.
 # Offroad Semantic Segmentation – Duality AI Hackathon
 
 This repository contains our final submission for the **Offroad Semantic Segmentation** track of the Duality AI Hackathon.  
@@ -64,9 +65,11 @@ Set DATA_PATH to the local dataset directory.
 #Training
 Run training using:
 ```
+conda activate nm_seg
+export WANDB_MODE=offline
 python train.py
 ```
-
+FIRST TRAIN THE MODEL.
 #Run evaluation using
 ```
 python test.py
@@ -78,6 +81,7 @@ The validation set was not used for training
 No test data was used or accessed by the team
 Model weights are provided in the runs/ directory
 Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
