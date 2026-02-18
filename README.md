@@ -34,7 +34,7 @@ The task is to segment off-road desert scenes using synthetic data generated fro
 > Final test evaluation is performed by the organizers on a hidden test set.
 
 ---
-
+```
 ## Repository Structure
 .
 ├── config/ # Configuration files
@@ -45,14 +45,15 @@ The task is to segment off-road desert scenes using synthetic data generated fro
 ├── test.py # Evaluation script (validation set)
 ├── requirements.txt # Dependencies
 └── README.md
-
+```
 ---
 
 ## Setup
 1. Create a Python environment
 2. Install dependencies:
-```bash
+```
 pip install -r requirements.txt
+```
 
 #Update the dataset path in:
 config/config.yaml
@@ -71,3 +72,4 @@ The validation set was not used for training
 No test data was used or accessed by the team
 Model weights are provided in the runs/ directory
 Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
