@@ -71,7 +71,7 @@ export WANDB_MODE=offline
 ```
 
 #Training
-Run training using:
+ Train using:
 ```
 python train.py
 ```
@@ -87,6 +87,7 @@ python test.py
 2.No test data was used or accessed by the team
 3.Model weights are provided in the runs/ directory
 4.Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
