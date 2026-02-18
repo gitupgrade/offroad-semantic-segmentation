@@ -20,7 +20,7 @@ The task is to segment off-road desert scenes using synthetic data generated fro
 - **Architecture:** DeepLabV3
 - **Backbone:** MobileNetV3
 - **Number of classes:** 10
-- **Input size:** 513 × 513
+
 - **Loss:** Cross-Entropy Loss (with class weights)
 - **Framework:** PyTorch
 
@@ -78,5 +78,6 @@ The validation set was not used for training
 No test data was used or accessed by the team
 Model weights are provided in the runs/ directory
 Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
