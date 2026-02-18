@@ -31,11 +31,11 @@ The task is to segment off-road desert scenes using synthetic data generated fro
 - **Evaluation set:** Organizer-provided validation set (`val/`)
 - **Final validation mIoU:** **0.7646**
 
-> Final test evaluation is performed by the organizers on a hidden test set.
 
 ---
-```
+
 ## Repository Structure
+```
 .
 ├── config/ # Configuration files
 ├── models/ # Model definitions
@@ -56,20 +56,27 @@ pip install -r requirements.txt
 ```
 
 #Update the dataset path in:
+```
 config/config.yaml
+```
 Set DATA_PATH to the local dataset directory.
 
-#raining
+#Training
 Run training using:
+```
 python train.py
+```
 
-
-#Run evaluation using:
+#Run evaluation using
+```
 python test.py
+```
+
 
 #Notes
 The validation set was not used for training
 No test data was used or accessed by the team
 Model weights are provided in the runs/ directory
 Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
