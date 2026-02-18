@@ -133,3 +133,9 @@ data/
 *.pth
 *.pt
 wandb/
+
+# Allow final trained model for submission
+!runs/
+!runs/deeplab_desert_best.pt
+
+
