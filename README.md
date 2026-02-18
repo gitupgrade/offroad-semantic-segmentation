@@ -64,14 +64,18 @@ Set DATA_PATH to the local dataset directory.
 
 AT EACH STEP PLEASE MAKE SURE YOU ARE IN RIGHT DIRECTORY IN TERMINAL.
 
-#Training
-Run training using:
+#To set up:
 ```
 conda activate nm_seg
 export WANDB_MODE=offline
+```
+
+#Training
+Run training using:
+```
 python train.py
 ```
-FIRST TRAIN THE MODEL.
+
 #Run evaluation using
 ```
 python test.py
@@ -83,6 +87,7 @@ python test.py
 2.No test data was used or accessed by the team
 3.Model weights are provided in the runs/ directory
 4.Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
