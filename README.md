@@ -4,7 +4,7 @@ NOTE:THIS PROGRAM HAS BEEN COMPLETELY WRITTEN ON LINUX UBUNTU.
 This repository contains our final submission for the **Offroad Semantic Segmentation** track of the Duality AI Hackathon.  
 The task is to segment off-road desert scenes using synthetic data generated from Duality AI’s Falcon digital twin platform.
 
-> Note: The provided `requirements.txt` reflects the development environment; minimal dependencies are sufficient to run training and evaluation.
+
 
 ---
 
@@ -51,7 +51,8 @@ The task is to segment off-road desert scenes using synthetic data generated fro
 
 ## Setup
 1. Create a Python environment
-2. Install dependencies:
+   > Note: The provided `requirements.txt` reflects the development environment; minimal dependencies are sufficient to run training and evaluation.
+3. Install dependencies:
 ```
 pip install -r requirements.txt
 ```
@@ -87,6 +88,7 @@ python test.py
 2.No test data was used or accessed by the team
 3.Model weights are provided in the runs/ directory
 4.Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
