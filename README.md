@@ -79,10 +79,11 @@ python test.py
 
 
 #Notes
-The validation set was not used for training
-No test data was used or accessed by the team
-Model weights are provided in the runs/ directory
-Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+1.The validation set was not used for training
+2.No test data was used or accessed by the team
+3.Model weights are provided in the runs/ directory
+4.Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
