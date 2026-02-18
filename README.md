@@ -51,7 +51,7 @@ The task is to segment off-road desert scenes using synthetic data generated fro
 ## Setup
 1. Create a Python environment
    > Note: The provided `requirements.txt` reflects the development environment; minimal dependencies are sufficient to run training and evaluation .Its  up to you to download all mentioned in requirements or just minimal required to run the model.
-3. Install dependencies:
+2. Install dependencies:
 ```
 pip install -r requirements.txt
 ```
@@ -87,6 +87,7 @@ python test.py
 2.No test data was used or accessed by the team
 3.Model weights are provided in the runs/ directory
 4.Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
