@@ -55,38 +55,41 @@ The task is to segment off-road desert scenes using synthetic data generated fro
 ```
 pip install -r requirements.txt
 ```
-
+---
 #Update the dataset path in:
 ```
 config/config.yaml
 ```
+
 Set DATA_PATH to the local dataset directory.
 
 AT EACH STEP PLEASE MAKE SURE YOU ARE IN RIGHT DIRECTORY IN TERMINAL.
+---
 
 #To set up:
 ```
 conda activate nm_seg
 export WANDB_MODE=offline
 ```
-
+---
 #Training
  Train using:
 ```
 python train.py
 ```
-
+---
 #Run evaluation using
 ```
 python test.py
 ```
-
+---
 
 #Notes
 1.The validation set was not used for training
 2.No test data was used or accessed by the team
 3.Model weights are provided in the runs/ directory
 4.Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
