@@ -1,4 +1,5 @@
 NOTE:THIS PROGRAM HAS BEEN COMPLETELY WRITTEN ON LINUX UBUNTU + NVIDIA GPU(CUDA WORKING)
+Cpu-only training may not be supported.
 # Offroad Semantic Segmentation – Duality AI Hackathon
 
 This repository contains our final submission for the **Offroad Semantic Segmentation** track of the Duality AI Hackathon.  
@@ -47,6 +48,22 @@ The task is to segment off-road desert scenes using synthetic data generated fro
 └── README.md
 ```
 ---
+## Dataset Folder Structure (Required)
+
+Your dataset path (`DATA_PATH` in `config/config.yaml`) **must** have this exact structure:
+```
+DATA_PATH/
+├── train/
+│   ├── Color_Images/       # RGB input images
+│   └── Segmentation/       # segmentation masks (same filename as image)
+└── val/
+    ├── Color_Images/
+    └── Segmentation/
+```
+**Important:** Each image in `Color_Images/` must have a corresponding mask in `Segmentation/` with the **same filename** (only extension may differ).
+Example: `xxx.png` ↔ `xxx.png`
+---
+
 
 ## Setup
 ```
@@ -84,6 +101,7 @@ pip install -r requirements.txt
 config/config.yaml
 ```
 Set DATA_PATH to the local dataset directory.
+
 ---
 ```
 export WANDB_MODE=offline
@@ -107,6 +125,7 @@ python test.py
 2.No test data was used or accessed by the team
 3.Model weights are provided in the runs/ directory
 4.Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
