@@ -49,8 +49,29 @@ The task is to segment off-road desert scenes using synthetic data generated fro
 ---
 
 ## Setup
+```
+git clone https://github.com/gitupgrade/offroad-semantic-segmentation.git
+cd offroad-semantic-segmentation
+ls   # should show train.py, test.py, requirements.txt
+```
 1. Create a Python environment
    > Note: The provided `requirements.txt` reflects the development environment; minimal dependencies are sufficient to run training and evaluation .Its  up to you to download all mentioned in requirements or just minimal required to run the model.
+
+---
+
+
+
+
+AT EACH STEP PLEASE MAKE SURE YOU ARE IN RIGHT DIRECTORY IN TERMINAL.
+---
+
+#To set up:
+```
+conda create -n nm_seg python=3.10 -y
+conda activate nm_seg
+
+```
+---
 2. Install dependencies:
 ```
 pip install -r requirements.txt
@@ -60,21 +81,16 @@ pip install -r requirements.txt
 ```
 config/config.yaml
 ```
-
 Set DATA_PATH to the local dataset directory.
-
-AT EACH STEP PLEASE MAKE SURE YOU ARE IN RIGHT DIRECTORY IN TERMINAL.
 ---
-
-#To set up:
 ```
-conda activate nm_seg
 export WANDB_MODE=offline
 ```
 ---
 #Training
  Train using:
 ```
+
 python train.py
 ```
 ---
@@ -89,6 +105,7 @@ python test.py
 2.No test data was used or accessed by the team
 3.Model weights are provided in the runs/ directory
 4.Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
