@@ -74,6 +74,8 @@ conda activate nm_seg
 ---
 2. Install dependencies:
 ```
+conda install -y pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+
 pip install -r requirements.txt
 ```
 ---
@@ -105,6 +107,7 @@ python test.py
 2.No test data was used or accessed by the team
 3.Model weights are provided in the runs/ directory
 4.Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
