@@ -1,4 +1,4 @@
-NOTE:THIS PROGRAM HAS BEEN COMPLETELY WRITTEN ON LINUX UBUNTU + NVIDIA GPU
+NOTE:THIS PROGRAM HAS BEEN COMPLETELY WRITTEN ON LINUX UBUNTU + NVIDIA GPU(CUDA WORKING)
 # Offroad Semantic Segmentation – Duality AI Hackathon
 
 This repository contains our final submission for the **Offroad Semantic Segmentation** track of the Duality AI Hackathon.  
@@ -107,6 +107,7 @@ python test.py
 2.No test data was used or accessed by the team
 3.Model weights are provided in the runs/ directory
 4.Absolute paths are not stored in checkpoints; paths are configurable via config.yaml
+
 
 
 
